@@ -11,12 +11,18 @@ using namespace std;
 // Output: The inflation rates for two successive years and the trend.
 
 // Get user input for the prices of the item
+// Preconditions: None
+// Postconditions: Parameters currentPrice, priceOneYearAgo, priceTwoYearsAgo are updated with user input.
 void getInput(double& currentPrice, double& priceOneYearAgo, double& priceTwoYearsAgo);
 
 // Calculate the inflation rates and determine the trend
+// Preconditions: None
+// Postconditions: Inflation rates and trend variables are updated.
 void calculateInflationRates(double currentPrice, double priceOneYearAgo, double priceTwoYearsAgo, double& inflationRateYear1, double& inflationRateYear2, string& trend);
 
 // Output the results
+// Preconditions: Inflation rates and trend are calculated.
+// Postconditions: Results are displayed to the user.
 void outputResults(double inflationRateYear1, double inflationRateYear2, string trend);
 
 int main() {
